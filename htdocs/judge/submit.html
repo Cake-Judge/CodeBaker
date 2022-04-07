@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" content-type="text/html">
+    <meta http-equiv="Content-Disposition" content="inline">
+    <title>Codebaker Online-Judge - Submit</title>
+    <link rel="stylesheet" href="../index.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div id="logo">
+            <img src="../logo.jpg" />
+        </div>
+        <div class="title">
+            <h1>Codebaker Online Judge</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="../index.html" class="linkers">首页</a>
+                </li>
+                <li>
+                    <a href="../cakesets.html" class="linkers">糕团</a>
+                </li>
+                <li>
+                    <a href="../discussion.html" class="linkers">讨论</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <form action="./submit.php" method="post">
+            <strong>&nbsp;&nbsp;提交糕团编号：</strong>
+            <input type="text" class="cakeid" name="cakeid">
+            <br/>
+            <textarea class="code" name="code" rows="20" cols="80"></textarea>
+            <br/>
+            <input class="submit" type="submit" value="submit" />
+        </form>
+    </div>
+    <div class="footer">
+        <p class="copyright">&copy; Codebaker 2022. All rights reserved.</p>
+    </div>
+</body>
+<!--这个文件夹里是apache2.4，已经配置完了，试过单独访问submit.php可以。
+但是单独访问因为表单undefined，所以会有一点小问题。-->
+</html>
